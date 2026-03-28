@@ -1,0 +1,160 @@
+
+:root {
+  --headingGrey: #323232;
+  --paraColor: #395b8d;
+  --mainBodyColor: rgb(45, 54, 84);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EAEDF0;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.mainContainer,
+.submission-header {
+  border: 1px solid black;
+  background-color: #F6F7F8;
+  color: var(--paraColor);
+  width: 80%;
+  min-width: 400px;
+  box-sizing: border-box;
+}
+
+.submission-header {
+  text-align: center;
+  margin: 20px auto 0;
+  padding: 20px;
+}
+
+.header-elements h1 {
+  color: var(--headingGrey);
+  overflow-wrap: break-word;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--mainBodyColor);
+  margin: 20px;
+  padding: 20px;
+  
+}
+
+.form-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin:20px;
+  padding: 20px;;
+}
+
+.inputform,
+.radioFieldSet,
+.select-container,
+.abstract-input-container{
+  box-sizing: border-box;
+  padding: 10px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.radioFieldSet {
+  border: none;
+  margin: 0;
+}
+
+.radioFieldSet 
+  p {
+  display: flex;
+  margin: 0;
+  label{
+    text-align: left;
+  }
+}
+
+.select-container {
+  border: none;
+  margin: 0;
+}
+
+label {
+  width: 120px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.t-shrit-select {
+  width: 153px;
+}
+
+
+.abstract-input-container{
+  width: 100%;
+  textarea{
+    border:1px solid black;
+    font-size: 14px;;
+    height: 4em;
+    max-width: 100%;
+
+  }
+}
+
+.instruction{
+  text-align: center;
+  font-size: 0.8rem;
+  width: 100%;
+  overflow: auto;
+  color : var(--paraColor);
+  
+}
+
+
+.fourm-footer {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  button{
+
+    font-size: large;
+    background-color: #8dbec2d5;
+    color: #f8f8f8;
+    padding: 0.3rem 0.5rem ;
+    font-weight: bold;
+    border-radius: 0rem;
+    border: none;
+    margin-right: 9rem;
+
+  }
+
+}
+
+
+.fourm-footer button:hover{
+  background-color: #a1c139;
+}
+
+.fourm-footer button:active {
+  background-color: #0d7ca4;
+}
+
+
+
+
+
+

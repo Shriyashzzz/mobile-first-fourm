@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header class = "submission-header">
+            <section class = "header-elements">
+                <h1>Speaker Submission</h1>
+                <p>Want to speak at our fake conference?<br> Fill out this form</p>
+            </section>         
+        </header>
+    
+        <main class="mainContainer">
+
+            
+            <form action="" method="get">
+                <div class = "form-body">
+
+                
+                    <section class = "inputform">
+                        <label for="userName">Name:</label>
+                        <input type="text" name="username" id="userName">
+                    </section>
+                    <section class = "inputform">
+                        <label for="userEmail"> Email:</label>
+                        <input type="email" id = "userEmail" name ="email">
+                    </section>
+
+                    <fieldset class = "radioFieldSet">
+                        <label class = "radioLegend">Type of Talk:</label>
+                        <p>
+                            
+                            <input type="radio" id = "radioMainStage", name = "radioTalk">
+                            <label for="radioMainStage">Main Stage</label>
+                            <input type="radio" id = "radioWorkShop", name = "radioTalk">
+                            <label for="radioWorkShop">Workshop</label>
+
+                        </p>
+                        
+
+                    </fieldset>
+
+                    <fieldset class = "select-container" >
+                        <label for="t-shirt" >T-Shirt Size:</label>
+                        <select name="T-Shirt" id="t-shirt" class = "t-shrit-select">
+                            <option value="Extra Small">XS</option>
+                            <option value="Small">S</option>
+                            <option value="Medium">M</option>
+                            <option value="Large">L</option>
+                            <option value="Extra Large">XL</option>
+
+                        </select>
+                    </fieldset>
+
+                    <div class ="abstract-input-container">
+                        <label for="abstract-input">Abstract:</label>
+                        <textarea name="abstract" id="abstract-input"></textarea>
+                    </div>
+                    <div class = "instruction">Describe your talk in 500 words or less</div>
+
+                    <section class = "fourm-footer">
+                        <div> <input type="checkbox" name="todayAvailable" id="date">
+                        <label for="date">I'm available the date of the talk</label>
+                        </div>
+                        <button type = "submit"> Submit</button>
+                    </section>
+                </div>
+
+                
+
+                
+
+
+                
+            </form>
+
+
+        </main>
+   
+     
+    
+
+    
+
+    
+</body>
+</html>
